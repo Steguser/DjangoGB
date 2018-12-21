@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% if object %}
+    <h1 class="object__name">
+       {{ object.name }}
+    </h1>
+    <span>
+        {{ object.description }}
+    </span>
+    {% else %}
+    Product does not exist
+    {% endif %}
+</body>
+</html>
